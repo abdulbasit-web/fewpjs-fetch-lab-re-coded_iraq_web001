@@ -1,4 +1,5 @@
 function fetchBooks() {
+<<<<<<< HEAD
   return fetch("https://anapioficeandfire.com/api/books")
     .then((response) => {
       return response.json();
@@ -7,6 +8,14 @@ function fetchBooks() {
       console.log(data);
       renderBooks(data);
     });
+=======
+ fetch("https://anapioficeandfire.com/api/books")
+  .then((response) => response.json())
+  .then((json) => {
+    renderBooks(json);
+  
+  });
+>>>>>>> a2ea74aacac2dd2c3114a0b8296ee397388a1734
 }
 
 // function renderBooks(json) {
